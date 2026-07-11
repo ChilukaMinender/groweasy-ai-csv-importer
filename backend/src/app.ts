@@ -6,9 +6,10 @@ import importRoutes from "./routes/import.routes";
 
 const app: Application = express();
 
+// Enable CORS for local development and production
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: true,
     credentials: true,
   })
 );
